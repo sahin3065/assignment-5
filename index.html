@@ -129,7 +129,7 @@
                          <p class="">Coach-009-WEB ! AC_Business</p>
                        </div> 
                      </div>
-                        <button class="btn"><img src="images/seat-green.png" alt=""> 40 Seats left</button>
+                        <button class="btn"><img src="images/seat-green.png" alt=""> <span id="total-seat">8</span> Seats left</button>
                    </div>                 
                     <div class="bg-gray-200 space-y-5 pl-5 pr-5">
                        <div class="flex justify-between">
@@ -191,29 +191,56 @@
                           <div class="mt-16">B</div>
                        </div>
                        <div class="ml-8 grid grid-cols-4 gap-x-20 gap-y-8 ">
-                          <button class="btn px-10 ">A1</button>
-                          <button class="btn px-10">A2</button>
-                          <button class="btn px-10">A3</button>
-                          <button class="btn px-10">A4</button>
-                          <button class="btn px-10">B1</button> 
-                          <button class="btn px-10">B2</button>
-                          <button class="btn px-10">B3</button>
-                          <button class="btn px-10">B4</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">A1</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">A2</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">A3</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">A4</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">B1</button> 
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">B2</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">B3</button>
+                          <button class="add-btn bg-slate-50 rounded-lg h-12 w-12">B4</button>
                        </div>
                     </div> 
                   </div> 
                        <!-- select seat -->
                        <div class="container ml-20">
+                        <div class="seat-plan">
                          <h1 class=" text-xl font-bold">Select Your Seat</h1> 
-                         <div class="flex justify-evenly mt-5">
-                             <h3 class="font-semibold">Seat <span>0</span></h3>
-                             <h3 class="font-semibold">Class</h3>
-                             <h3 class="font-semibold">Price</h3>
-                         </div> 
-                         <div class="flex">
-                             <input class="bg-slate-50 pl-4" type="text" name="" id="" placeholder="Have any coupon">
+                           <div class="flex justify-evenly font-semibold mt-5">
+                               <h2>Seat <span id="seat-count">0</span></h2>
+                               <h2>Class</h2>
+                               <h2>Price</h2>
+                           </div>
+                           <br>
+                           <hr> 
+                        <div class="price-container mt-3 space-y-3 ">  
+                         <div class="flex ml-5 justify-evenly ">
+                             <p>A1</p>
+                             <p class="ml-10">Economy</p>
+                             <p class="mr-5 "><span class="price">550</span></p>
+                         </div>
+                         <div class="flex ml-5  justify-evenly">
+                          <p>A2</p>
+                          <p class="ml-10">Economy</p>
+                          <p class="mr-5"><span class="price">550</span></p>
+                         </div>
+                         <hr>
+                         <div class="flex ml-24 space-x-64">
+                            <p>Total Price</p>
+                            <p class="mr-"><span>BDT 1100</span></p>
+                         </div>
+                         
+                        </div> 
+                        <div id="selected-seat-container" class="selected-seat-container flex">
+
+                        </div>
+                        </div>
+
+                         <div class="join flex mt-4">
+                             <input class="bg-slate-50 pl-4 w-96 rounded-lg ml-5" type="text" name="" id="" placeholder="Have any coupon">
                              <button class="btn bg-[#1DD100]">Apply</button>
                          </div>
+
                          <div class="mt-10 space-y-4">
                           <h1 class="font-semibold">Passenger Name*</h1>
                             <input class="bg-slate-50 w-96 h-14 pl-4 rounded-xl" type="text" name="" id="" placeholder="Enter Your Name">
@@ -231,5 +258,6 @@
       <footer>
 
       </footer>
+      <script src="script/project.js"></script>
 </body>
 </html>
