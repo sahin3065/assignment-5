@@ -89,5 +89,33 @@ function setInnerText(id,value){
 }
 
 function next(){
-    
+    const headerSection = document.getElementById('header');
+    headerSection.classList.add('hidden');
+    const couponSection = document.getElementById('coupon-section');
+    couponSection.classList.add('hidden');
+    const paribahanSection = document.getElementById('paribahan-section');
+    paribahanSection.classList.add('hidden');
+    const greenlineSection = document.getElementById('greenline');
+    greenlineSection.classList.add('hidden');
+    const selectSection = document.getElementById('select-section');
+    selectSection.classList.add('hidden');
+
+    const successSection = document.getElementById('success-section');
+    successSection.classList.remove('hidden');
+}
+
+function show(){
+    const header = document.getElementById('header');
+    header.classList.remove('hidden');
+    const couponSection = document.getElementById('coupon-section');
+    couponSection.classList.remove('hidden');
+    const paribahanSection = document.getElementById('paribahan-section');
+    paribahanSection.classList.remove('hidden');
+    const greenlineSection = document.getElementById('greenline');
+    greenlineSection.classList.remove('hidden');
+    const selectSection = document.getElementById('select-section');
+    selectSection.classList.remove('hidden');
+
+    const successSection = document.getElementById('success-section');
+    successSection.classList.add('hidden');
 }
