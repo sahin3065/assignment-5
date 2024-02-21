@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-raleway ">
-       <header>
+       <header >
             <!-- navbar -->
            <div class="container mx-auto lg:px-24 px-8 my-8">
             <div class="navbar bg-base-100">
@@ -47,15 +47,17 @@
                  <p class="text-lg font-normal text-white text-center mt-5">Yes, you can run unit tests and view the results directly within the app. 
                   <br>
                    The integrated testing features allow for a streamlined .</p>
-                  <div class="text-center">
-                    <button class="btn bg-[#1DD100] text-black font-bold mt-5">Buy Tickets</button>
+                  <div class="text-center mt-4">
+                    <a class="text-white button-link inline-block px-10 py-6 bg-[#1DD100] rounded-lg " 
+                    href="#P.H-Paribahan">Buy Tickets</a>
+                    <!-- <button class="btn bg-[#1DD100] text-black font-bold mt-5">Buy Tickets</button> -->
                   </div>
                </div>
            </div>
       </header>
       <main>
          <!-- coupon section -->
-         <section>
+         <section class="section-1 ">
           <h3 class="text-center text-4xl font-bold">Best offers for you</h3>
              <div class="container mx-auto lg:px-24 px-8 my-8">
           <div class="lg:flex ">
@@ -74,7 +76,7 @@
               </div>
               <div class="card w-56  bg-[#FFBF0F] ">
                 <div class="card-body text-center">
-                  <h2 class="card-title text-3xl pt-4 justify-center font-bold">NEW15</h2>
+                  <h2 id="new-15"  class="card-title text-3xl pt-4 justify-center font-bold">NEW15</h2>
                   <p>Copun Code</p>
                 </div>
               </div>
@@ -92,7 +94,7 @@
                 <div>
                     <img class="bg-gray-100 max-h-[190px]" src="images/cupon-devider.png" alt="">
                 </div>
-                <div class="card w-56  bg-[#F78C9C] ">
+                <div id="couple-20" class="card w-56  bg-[#F78C9C] ">
                   <div class="card-body text-center">
                     <h2 class="card-title text-3xl justify-center pt-5 font-bold">Couple 20</h2>
                     <p>Copun Code</p>
@@ -107,7 +109,7 @@
             </div>
          </section>
          <!-- paribhan section -->
-         <section>
+         <section class="section-2 ">
             <div class="mx-auto lg:px-24 px-8 my-8">
                 <div class="text-center space-y-4">
                   <h1 class="text-4xl font-bold">P.H Paribahan</h1>
@@ -117,7 +119,7 @@
                 </div>
             </div>
          </section>
-         <section>
+         <section class="section-3">
              <div class="mx-auto lg:px-24 px-8 my-8">
                 <div class="flex  justify-center ">
                  <div class="shadow-xl space-y-5">
@@ -129,7 +131,7 @@
                          <p class="">Coach-009-WEB ! AC_Business</p>
                        </div> 
                      </div>
-                        <button class="btn"><img src="images/seat-green.png" alt=""> <span id="total-seat">8</span> Seats left</button>
+                        <button class="btn"><img src="images/seat-green.png" alt=""> <span id="left-seat">8</span> Seats left</button>
                    </div>                 
                     <div class="bg-gray-200 space-y-5 pl-5 pr-5">
                        <div class="flex justify-between">
@@ -149,22 +151,23 @@
                        </div>
                     </div>
                  </div>
-                   <!--  -->
+                   <!--per seat  -->
+                   
                    <img class=" h-[220px]" src="images/info-devider.png" alt="">
-                   <div class="w-96 h-56 bg-slate-50 text-center ">
+                   <div class="taka w-96 h-56 bg-slate-50 text-center ">
                     <div class="ml-40 mt-12">
                       <img class="" src="images/fare.png" alt="">
                     </div>
-                    <h3 class="text-3xl font-bold">550 Taka</h3>
+                    <h3 class="price text-3xl font-bold"><span>550</span> Taka</h3>
                     <p>Per Seat</p>
-                      
+       
                       </div>
                     </div>
                    </div>
                 </div>    
             </div>
          </section>
-         <section>
+         <section class="section-4">
               <div class="mx-auto lg:px-24 px-8 my-8">
                    <div class="select-container grid grid-cols-2">
                     <div>
@@ -212,33 +215,36 @@
                                <h2>Price</h2>
                            </div>
                            <br>
-                           <hr> 
-                        <div class="price-container mt-3 space-y-3 ">  
-                         <div class="flex ml-5 justify-evenly ">
-                             <p>A1</p>
-                             <p class="ml-10">Economy</p>
-                             <p class="mr-5 "><span class="price">550</span></p>
-                         </div>
-                         <div class="flex ml-5  justify-evenly">
-                          <p>A2</p>
-                          <p class="ml-10">Economy</p>
-                          <p class="mr-5"><span class="price">550</span></p>
-                         </div>
+                           <hr>
+                            
+                        <div class="price-container mt-3 space-y-3 "> 
+                          
+                          <div class="flex justify-evenly hidden">
+                              <p>A1</p>
+                              <p>Economy</p>
+                              <p>550</p>
+                          </div>
+                          
+                          <div id="selected-seat-container" class="selected-seat-container">
+
+                          </div>
                          <hr>
-                         <div class="flex ml-24 space-x-64">
-                            <p>Total Price</p>
-                            <p class="mr-"><span>BDT 1100</span></p>
+                         <div class="flex ml-24 justify-between">
+                            <p>Total Price : <span id="total-price">0</span></p>
+                           
                          </div>
                          
                         </div> 
-                        <div id="selected-seat-container" class="selected-seat-container flex">
-
-                        </div>
+                        
                         </div>
 
                          <div class="join flex mt-4">
                              <input class="bg-slate-50 pl-4 w-96 rounded-lg ml-5" type="text" name="" id="" placeholder="Have any coupon">
-                             <button class="btn bg-[#1DD100]">Apply</button>
+                             <button onclick="updateGrandTotal('apply-btn')" class="btn bg-[#1DD100]" id="apply-btn">Apply</button>
+                         </div>
+
+                         <div class="grand">
+                             <p>Grand Total : <span id="grand-total">0</span></p>
                          </div>
 
                          <div class="mt-10 space-y-4">
@@ -249,9 +255,22 @@
                           <h1 class="font-semibold">Email Id*</h1>
                            <input class="bg-slate-50 w-96 h-14 pl-4 rounded-xl" type="email" name="" id="" placeholder="Enter Your Email Id">
                          </div>
-                         <button class="mt-5 btn bg-[#1DD100] w-96 text-white">Next</button>
+                         <button onclick="next()" class="mt-5 btn bg-[#1DD100] w-96 text-white">Next</button>
                        </div>
                    </div>
+              </div>
+         </section>
+     <!-- success -->
+         <section class="hidden">
+              <div class="w-[718px] h-[481px]  text-center justify-center ml-72 mt-32 space-y-5 pt-16 bg-slate-50 rounded-xl">
+                  <div class="flex justify-center items-center">
+                    <img class="" src="images/success.png" alt="">
+                  </div>
+                  <h1 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h1>
+                  <p class="text-xl font-medium">Thank you for Booking Our Bus Seats. <br> 
+                    We are working hard to find the best service and deals for you.</p>
+                    <p>Shortly you will find a confirmation in your email.</p>
+                    <button class="btn w-[300px] h-[56px] bg-[#27AE60] text-white text-xl rounded-full">Continue</button>
               </div>
          </section>
       </main>
