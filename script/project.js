@@ -99,6 +99,8 @@ function next(){
     greenlineSection.classList.add('hidden');
     const selectSection = document.getElementById('select-section');
     selectSection.classList.add('hidden');
+    const footerSection = document.getElementById('footer-section');
+    footerSection.classList.add('hidden');
 
     const successSection = document.getElementById('success-section');
     successSection.classList.remove('hidden');
@@ -115,6 +117,9 @@ function show(){
     greenlineSection.classList.remove('hidden');
     const selectSection = document.getElementById('select-section');
     selectSection.classList.remove('hidden');
+    const footerSection = document.getElementById('footer-section');
+    footerSection.classList.remove('hidden');
+
 
     const successSection = document.getElementById('success-section');
     successSection.classList.add('hidden');
